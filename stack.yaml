@@ -21,7 +21,7 @@ packages:
 ghc-options:
   # Eventually we want "$locals": -Wall -Werror
   ghc-parser: -Wall -Werror
-  ihaskell: -Wall -Werror
+  ihaskell: -Wall # -Werror
   ihaskell-widgets: -Wall -Werror
 
 allow-newer: true
@@ -40,6 +40,9 @@ extra-deps:
 - cubicbezier-0.6.0.5
 - mfsolve-0.3.2.0
 - fast-math-1.0.2
+- deptrack-core-0.1.0.0
+- deptrack-dot-0.1.0.0
+- dotgen-0.4.2
 
 docker:
   repo: "ihaskell-dev:latest"
